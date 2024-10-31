@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css" integrity="sha512-dPXYcDub/aeb08c63jRq/k6GaKccl256JQy/AnOq7CAnEZ9FzSL9wSbcZkMp4R26vBsMLFYH4kQ67/bbV8XaCQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Dragon Shopping</title>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <a href="#" class="logo">Dragon</a>
+        <a href="#">About Us</a>
+        <a href="#">Contact Us</a>
+        <input type="text" placeholder="Search">
+        <button>Search</button>
+        <a href="#">Cart</a>
+        <a href="#">Wishlist</a>
+        <a href="#">Account</a>
+    </nav>
+
+    <!-- Sidebar and Banner Section -->
+    <div class="main-content">
+        <aside class="sidebar">
+            <ul>
+                <li><a href="#">Supermarket</a></li>
+                <li><a href="#">Health & Beauty</a></li>
+                <li><a href="#">Home & Office</a></li>
+                <li><a href="#">Fashion</a></li>
+                <li><a href="#">Electronics</a></li>
+                <li><a href="#">Gaming</a></li>
+                <li><a href="#">Baby Products</a></li>
+                <li><a href="#">Sporting Goods</a></li>
+                <li><a href="#">Garden & Outdoor</a></li>
+            </ul>
+        </aside>
+        <div class="banner">
+            <img src="{{ url_for('static', filename='img/banner.jpeg') }}" alt="Banner Image">
+        </div>
+    </div>
+
+    <!-- Additional Sections (e.g., Free Delivery, Amazon Food) -->
+    <section class="info-section">
+        <div class="info-item">Free Delivery</div>
+        <div class="info-item">Dragon Food</div>
+        <div class="info-item">Airtime & Bills</div>
+    </section>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
