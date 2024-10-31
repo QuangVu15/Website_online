@@ -12,7 +12,10 @@
 <body>
     <!-- Navbar -->
     <nav class="navbar">
-        <a href="#" class="logo">Dragon</a>
+        <a href="#" class="logo">
+            <img src="{{ url_for('static', filename='img/logo.jpg') }}">
+            Dragon
+        </a>
         <a href="#">About Us</a>
         <a href="#">Contact Us</a>
         <input type="text" placeholder="Search">
